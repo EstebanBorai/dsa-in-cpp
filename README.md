@@ -14,7 +14,7 @@ git clone https://github.com/estebanborai/cpp-how-to-program.git
 cd cpp-how-to-program/samples/ch01/2.1/
 
 # compile the source file using g++ compiler
-g++ hello-world.cpp
+g++ hello-world.cc
 
 # run the output file
 ./a.out
