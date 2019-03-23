@@ -14,5 +14,6 @@ int main()
 
   sum = number1 + number2;
 
+  // stream insertion operator
   std::cout << "Sum is " << sum << std::endl;
 }
