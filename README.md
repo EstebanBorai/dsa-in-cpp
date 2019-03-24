@@ -14,7 +14,7 @@ git clone https://github.com/estebanborai/learn-cpp.git
 cd learn-cpp/htp/ch01/2.1/
 
 # compile the source file using g++ compiler
-g++ hello-world.cc
+g++ hello-world.cpp
 
 # run the output file
 ./a.out
