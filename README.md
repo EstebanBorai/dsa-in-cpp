@@ -15,8 +15,7 @@ For example the `hello-world.cpp`.
 
 ```bash
 # step into a source directory
-# e.g. cd htp/samples/ch01/2.1/
-cd learn-cpp/htp/ch02/2.1/
+cd learn-cpp/
 
 # compile the source file using g++ compiler
 g++ hello-world.cpp
