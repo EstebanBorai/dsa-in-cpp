@@ -33,5 +33,4 @@ int main() {
   cout << "Circumference: " << c_circumference << endl;
   cout << "Area: " << c_area << endl;
   cout << "Diameter: " << c_diameter << endl;
-  cout << "Circumference: " << c_area << endl;
 }
