@@ -43,5 +43,12 @@ make
 ./main.out
 ```
 
+### Getting the Assembly code of your C++ file
+If you are using g++ / gcc compilers you are able to get the `.s` output of your code compiling with the `-S` flag as follows:
+
+`g++ -S main.cpp`
+
+This will produce `main.s`.
+
 ## Contributions
 Suggestions and improvements are welcome to this repository.
