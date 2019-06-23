@@ -50,5 +50,12 @@ If you are using g++ / gcc compilers you are able to get the `.s` output of your
 
 This will produce `main.s`.
 
+### Compile with standards
+- C++98
+	`g++ main.cpp`
+
+- C++11
+	`g++ -std=c++11 main.cpp`
+
 ## Contributions
 Suggestions and improvements are welcome to this repository.
