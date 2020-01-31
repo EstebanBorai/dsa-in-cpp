@@ -12,7 +12,7 @@ Learn C++ programming language fundamentals.
 
 #### Running simple programs:
 Simple programs run in a single file.
-For example the `hello-world.cpp`.
+For example the `dsa-cpp.cpp`.
 
 ```bash
 # step into a source directory
