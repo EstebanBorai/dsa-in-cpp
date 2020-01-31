@@ -1,15 +1,16 @@
-# learn-cpp
-> 🤓 Learning C++
+# dsa-cpp
+> 🤓 Data Structures & Algorithms in C++
 
 ## Motivation
 Learn C++ programming language fundamentals.
 
-## Running Locally
-### Requirements
+## Getting Started
+
+#### Requirements
 - g++ compiler
 - make tool installed
 
-### Running simple programs:
+#### Running simple programs:
 Simple programs run in a single file.
 For example the `hello-world.cpp`.
 
