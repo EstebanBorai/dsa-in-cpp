@@ -1,11 +1,14 @@
 /**
- *  Pretty brief sample of some of the C++ features, syntax and building blocks.
- *
+ *  Pretty brief sample of some of the C++ features, syntax and building blocks to
+ *  refresh C++ knowledge.
+ * 
  */
 
 #include <cstdlib>
 #include <iostream>
 #include <string>
+
+#define println(x) (std::cout << x << std::endl);
 
 // twoNumbers prompts the user for two values
 // and returns the total sum between them
@@ -131,6 +134,92 @@ void cppStruct() {
   std::cout << pass.mealPref << std::endl;
 }
 
+void usingNew() {
+  enum MealType {
+    NO_PREF,
+    REGULAR,
+    LOW_FAT,
+    VEGETARIAN
+  };
+
+  struct Passenger {
+    std::string  name;
+    MealType     mealPref;
+    bool         isFreqFlyer;
+    std::string  freqFlyerNo;
+  };
+
+  // pointer_name -> member  <=>  (*pointer_name).member
+  Passenger *p;
+
+  p = new Passenger;           // p is a pointer to a Passenger struct
+  
+  p -> name = "Pocahontas";
+  p -> mealPref = REGULAR;
+  p -> isFreqFlyer = false;
+  p -> freqFlyerNo = "NONE";
+
+  delete p;                   // destroy the object pointed by "p"
+}
+
+void arrayAllocation() {
+  char* buffer = new char[500];  // allocate a buffer of 500 chars
+  buffer[3] = 'a';               // elements are accessed using [] notation
+  delete [] buffer;              // deletes the buffer
+}
+
+void references() {
+  std::string author = "Samuel Clemens";
+  std::string& penName = author;            // penName is a reference/alias to "author" variable
+  penName = "Mark Twain";                   // now author is also "Mark Twain"
+  std::cout << author << std::endl;
+}
+
+void constants() {
+  const double PI = 3.14159265;
+  const int CUT_OFF[] = {90, 80, 70, 60};
+  const int N_DAYS = 7;
+  const int N_HOURS = 24*N_DAYS;  // constant expression
+
+  int counter[N_HOURS];           // an array of 168 ints
+}
+
+void usingTypeDef() {
+  // Assosiate names with constants
+  // similar to golang types
+  //
+  // type Fahrenheit float64
+  //
+  typedef char* BufferPtr;     // type BufferPtr is a pointer to a char
+  typedef double Coordinate;   // type Coordinate is a double
+
+  BufferPtr buff;
+  Coordinate x, y;
+}
+
+void scopes() {
+  const int Cat = 1;
+  println(Cat);
+
+  {
+    const int Cat = 2;
+    println(Cat);
+  }
+
+  int dog = Cat;
+  println(Cat);
+}
+
+void casting() {
+  int cat = 14;
+  double dog = (double) cat;  // traditional C-style cast
+  double pig = double(cat);   // C++ functional cast
+
+  println(cat);
+  println(dog);
+  println(pig);
+}
+
 int main() {
   twoNumbers();
   enumerations();
@@ -140,4 +229,11 @@ int main() {
   string();
   stringLength();
   cppStruct();
+  usingNew();
+  arrayAllocation();
+  references();
+  constants();
+  usingTypeDef();
+  scopes();
+  casting();
 }
