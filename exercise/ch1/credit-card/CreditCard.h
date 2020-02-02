@@ -13,6 +13,17 @@ class CreditCard {
     double getBalance() const { return balance; }
     int getLimit() const { return limit; }
 
+    void setNumber(std::string number) { number = number; }
+    void setName(std::string name) { name = name; }
+    void setBalance(double balance) { balance = balance; }
+    void setLimit(int limit) {
+      if (limit < 0) {
+        limit = 0;
+      }
+
+      limit = limit;
+    }
+
     bool chargelt(double price);
     void makePayment(double payment, bool isPastDueDate);
 

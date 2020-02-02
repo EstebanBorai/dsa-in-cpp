@@ -10,6 +10,11 @@ void testCreditCard() {
   wallet[1] = new CreditCard("7363 8836 2938 3372", "John Bowman", 3500);
   wallet[2] = new CreditCard("2672 3982 2928 3272", "John Bowman", 5000);
 
+  CreditCard* const favCard = wallet[0];
+
+  favCard -> setBalance(2000);
+  favCard -> setLimit(-100);
+
   for (int j = 1; j <= 16; j++) {
     wallet[0] -> chargelt(double(j));
     wallet[1] -> chargelt(2 * j);

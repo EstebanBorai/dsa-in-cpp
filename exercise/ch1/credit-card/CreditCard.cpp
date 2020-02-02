@@ -24,7 +24,7 @@ void CreditCard::makePayment(double payment, bool isPastDueDate) {
   double interest = 1.10;
 
   if (isPastDueDate) {
-    interest = 1.40;
+    interest += 0.40;
   }
 
   if (payment > 0) {
