@@ -1,8 +1,22 @@
 #include <iostream>
 
-bool someEven(int* items, int size) {
-  for (int i = 0; i < size; i++) {
-    std::cout << items[i] << std::endl;
+bool isEven(int m) {
+  return m % 2 == 0; 
+}
+
+bool someEven(int* arr, int size) {
+  int i = 0;
+
+  for (i; i < size; i++) {
+    bool const hasNext = (i + 1) < size;
+
+    if (hasNext) {
+      bool const isE = isEven(arr[i] * arr[i + 1]);
+
+      if (isE) {
+        return true;
+      }
+    }
   }
 
   return false;
@@ -11,7 +25,9 @@ bool someEven(int* items, int size) {
 int main() {
   int items[5] = {2, 4, 6, 8, 10};
 
-  someEven(items, 5);
+  bool isSomeEven = someEven(items, 5);
+
+  std::cout << isSomeEven << std::endl;
 
   return 0;
 }
