@@ -20,7 +20,13 @@ bool CreditCard::chargelt(double price) {
   return true;
 }
 
-void CreditCard::makePayment(double payment, double interest) {
+void CreditCard::makePayment(double payment, bool isPastDueDate) {
+  double interest = 1.10;
+
+  if (isPastDueDate) {
+    interest = 1.40;
+  }
+
   if (payment > 0) {
     balance -= (payment * interest);
   }
