@@ -14,7 +14,7 @@ class CreditCard {
     int getLimit() const { return limit; }
 
     bool chargelt(double price);
-    void makePayment(double payment, double interest);
+    void makePayment(double payment, bool isPastDueDate);
 
   private:
     std::string number;
