@@ -12,4 +12,6 @@ int main() {
   } while (std::next_permutation(string, string + sizeof(string) - 1));
 
   std::cout << "\nTotal Permutations: " << totalPermutations << std::endl;
+
+  return 0;
 }
