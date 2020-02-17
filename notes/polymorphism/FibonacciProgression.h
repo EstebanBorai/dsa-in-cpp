@@ -1,5 +1,5 @@
-#ifndef FIBONACCI_PROGRESSION_H;
-#define FIBONACCI_PROGRESSION_H;
+#ifndef FIBONACCI_PROGRESSION_H
+#define FIBONACCI_PROGRESSION_H
 
 #include "Progression.h"
 

@@ -1,5 +1,5 @@
-#ifndef GEOM_PROGRESSION_H;
-#define GEOM_PROGRESSION_H;
+#ifndef GEOM_PROGRESSION_H
+#define GEOM_PROGRESSION_H
 
 #include "Progression.h"
 
