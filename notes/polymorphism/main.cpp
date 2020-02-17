@@ -2,11 +2,7 @@
 #include "FibonacciProgression.h"
 
 int main() {
-  FibonacciProgression fib = FibonacciProgression();
+  Progression* prog;
 
-  fib.print();
-  fib.next();
-  fib.print();
-
-  return 0;
+  std::cout << "Arithmetic Progession with default increment: " << std::endl;
 }
