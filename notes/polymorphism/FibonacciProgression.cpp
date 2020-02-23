@@ -4,16 +4,16 @@
 FibonacciProgession::FibonacciProgession(long f, long s) : Progression(f), second(s), prev(second - first) {}
 
 long FibonacciProgession::firstValue() {
-  cur = first;
-  prev = second - first;
+	cur = first;
+	prev = second - first;
 
-  return cur;
+	return cur;
 }
 
 long FibonacciProgession::nextValue() {
-  long temp = prev;
-  prev = cur;
-  cur += temp;
-  
-  return cur;
+	long temp = prev;
+	prev = cur;
+	cur += temp;
+	
+	return cur;
 }

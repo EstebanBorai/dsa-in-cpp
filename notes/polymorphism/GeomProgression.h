@@ -4,14 +4,14 @@
 #include "Progression.h"
 
 class GeomProgression : public Progression {
-  public:
-    GeomProgression(long b = 2);
+	public:
+		GeomProgression(long b = 2);
 
-  protected:
-    virtual long nextValue();
+	protected:
+		virtual long nextValue();
 
-  protected:
-    long base;
+	protected:
+		long base;
 };
 
 #endif

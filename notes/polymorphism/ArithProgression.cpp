@@ -3,7 +3,7 @@
 ArithProgression::ArithProgression(long i) : Progression(), inc(i) {};
 
 long ArithProgression::nextValue() {
-  cur += inc;
+	cur += inc;
 
-  return cur;
+	return cur;
 }

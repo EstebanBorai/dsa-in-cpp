@@ -4,14 +4,14 @@
 #include "Progression.h"
 
 class ArithProgression : public Progression {
-  public:
-    ArithProgression(long i = 1);
+	public:
+		ArithProgression(long i = 1);
 
-  protected:
-    virtual long nextValue();
+	protected:
+		virtual long nextValue();
 
-  protected:
-    long inc;
+	protected:
+		long inc;
 };
 
 #endif

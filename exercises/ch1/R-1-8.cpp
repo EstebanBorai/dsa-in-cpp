@@ -1,20 +1,20 @@
 #include <iostream>
 
 bool isMultiple(long n, long m) {
-  // Takes only positive values
-  if (n < 0 || m < 0) {
-    return false;
-  }
+	// Takes only positive values
+	if (n < 0 || m < 0) {
+		return false;
+	}
 
-  if (n % m == 0) {
-    return true;
-  }
+	if (n % m == 0) {
+		return true;
+	}
 
-  return false;
+	return false;
 }
 
 int main() {
-  std::cout << isMultiple(3, 3) << std::endl;
+	std::cout << isMultiple(3, 3) << std::endl;
 
-  return 0;
+	return 0;
 }

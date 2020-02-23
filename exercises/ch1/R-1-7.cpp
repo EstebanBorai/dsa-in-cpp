@@ -1,17 +1,17 @@
 #include <iostream>
 
 int sumLeft(int n) {
-  int sum = 0;
+	int sum = 0;
 
-  while (n > 0) {
-    sum += n;
-    n--;
-  }
+	while (n > 0) {
+		sum += n;
+		n--;
+	}
 
-  return sum;
+	return sum;
 }
 
 int main() {
-  std::cout << sumLeft(2) << std::endl;
-  return 0;
+	std::cout << sumLeft(2) << std::endl;
+	return 0;
 }

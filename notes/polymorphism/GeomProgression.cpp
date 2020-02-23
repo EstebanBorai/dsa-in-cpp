@@ -3,7 +3,7 @@
 GeomProgression::GeomProgression(long b) : Progression(1), base(b) {};
 
 long GeomProgression::nextValue() {
-  cur *= base;
+	cur *= base;
 
-  return cur;
+	return cur;
 }
