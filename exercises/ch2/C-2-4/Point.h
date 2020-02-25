@@ -7,6 +7,6 @@ struct Point {
 
 	void print();
 	bool equals(Point * p);
-}
+};
 
 #endif

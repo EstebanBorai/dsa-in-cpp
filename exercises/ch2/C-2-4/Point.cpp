@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <cmath>
+#include <math.h>
+#include <limits>
 #include "Point.h"
 
 void Point::print() {
