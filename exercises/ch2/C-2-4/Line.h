@@ -18,11 +18,7 @@ class Line {
 		~Line();
 		Point* intersect(Line* l);
 		void analyze();
-
-		std::string get_equation() {
-			std::string e = eq;
-			return e;
-		};
+		std::string get_equation();
 
 	private:
 		Point* p1;
