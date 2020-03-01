@@ -1,6 +1,6 @@
 #include "credit_card.h"
 #include <string>
-#include "limit_exceed_exception.h"
+#include "limit_exceeded_exception.h"
 #include <iostream>
 
 int main() {
@@ -13,7 +13,7 @@ int main() {
 
 	try {
 		credit_card -> charge(1000.00);
-	} catch (LimitExceedException ex) {
+	} catch (LimitExceededException ex) {
 		std::cout << ex.get_message() << std::endl;
 	}
 

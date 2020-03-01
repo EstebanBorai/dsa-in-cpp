@@ -1,5 +1,5 @@
 #include "credit_card.h"
-#include "limit_exceed_exception.h"
+#include "limit_exceeded_exception.h"
 #include <iostream>
 
 bool CreditCard::charge(double amount) {
@@ -7,7 +7,7 @@ bool CreditCard::charge(double amount) {
 	bool is_charge_avoid_limit = (balance + amount) > limit;
 
 	if (is_charge_avoid_limit) {
-		throw LimitExceedException(limit, total_charge);
+		throw LimitExceededException(limit, total_charge);
 	}
 
 	return true;
@@ -21,7 +21,7 @@ void CreditCard::make_payment(double amount) {
 		// Attempt to pay the difference with credit
 		try {
 			charge(balance_due);
-		} catch (LimitExceedException ex) {
+		} catch (LimitExceededException ex) {
 			std::cout << ex.get_message() << std::endl;
 			return;
 		}
