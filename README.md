@@ -13,3 +13,4 @@
 - Notes on C++
 	- [Classes](https://github.com/estebanborai/dsa-cpp/tree/master/src/misc/credit_card)
 	- [Basic Inheritance](https://github.com/estebanborai/dsa-cpp/tree/master/src/misc/class_inheritance)
+	- [Polymorphism](https://github.com/estebanborai/dsa-cpp/tree/master/src/misc/polymorphism)

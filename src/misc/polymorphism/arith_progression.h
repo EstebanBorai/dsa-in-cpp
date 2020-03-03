@@ -1,17 +1,16 @@
 #ifndef ARITH_PROGRESSION_H
 #define ARITH_PROGRESSION_H
 
-#include "Progression.h"
+#include "progression.h"
 
 class ArithProgression : public Progression {
-	public:
-		ArithProgression(long i = 1);
-
-	protected:
-		virtual long nextValue();
-
 	protected:
 		long inc;
+
+		virtual long next_value();
+
+	public:
+		ArithProgression(long i = 1);
 };
 
 #endif

@@ -1,8 +1,8 @@
-#include "GeomProgression.h"
+#include "geom_progression.h"
 
 GeomProgression::GeomProgression(long b) : Progression(1), base(b) {};
 
-long GeomProgression::nextValue() {
+long GeomProgression::next_value() {
 	cur *= base;
 
 	return cur;
