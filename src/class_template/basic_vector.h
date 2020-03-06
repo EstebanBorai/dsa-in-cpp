@@ -8,7 +8,7 @@ class BasicVector {
 		int capacity;
 
 	public:
-		BasicVector(int capacity = 10);
+		BasicVector(int capacity = 10) : capacity(capacity) {};
 		int append(T value);
 
 		T& operator[](int i) {

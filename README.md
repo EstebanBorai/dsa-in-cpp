@@ -10,9 +10,13 @@
 
 ## Index
 
-- Notes on C++
-	- [Classes](https://github.com/estebanborai/dsa-cpp/tree/master/src/misc/credit_card)
-	- [Basic Inheritance](https://github.com/estebanborai/dsa-cpp/tree/master/src/misc/class_inheritance)
-	- [Polymorphism](https://github.com/estebanborai/dsa-cpp/tree/master/src/misc/polymorphism)
-	- [Function Template](https://github.com/estebanborai/dsa-cpp/tree/master/src/misc/fn_template)
-	- [Function Class](https://github.com/estebanborai/dsa-cpp/tree/master/src/misc/class_template)
+- Concepts
+	- [Classes](https://github.com/estebanborai/dsa-cpp/tree/master/src/credit_card)
+	- [Class Inheritance](https://github.com/estebanborai/dsa-cpp/tree/master/src/class_inheritance)
+	- [Struct Inheritance](https://github.com/estebanborai/dsa-cpp/tree/master/src/struct_inheritance)
+	- [Polymorphism](https://github.com/estebanborai/dsa-cpp/tree/master/src/polymorphism)
+	- [Function Template](https://github.com/estebanborai/dsa-cpp/tree/master/src/fn_template)
+	- [Function Class](https://github.com/estebanborai/dsa-cpp/tree/master/src/class_template)
+
+- Implementations
+	- [Shopping Cart](https://github.com/estebanborai/dsa-cpp/tree/master/src/shopping_cart)
