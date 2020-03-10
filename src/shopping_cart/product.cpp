@@ -8,3 +8,7 @@ void Product::println() {
 	std::cout << "Price:        " << price << "$" << std::endl;
 	std::cout << "Quantity:     " << quantity << std::endl;
 }
+
+float Product::get_total() {
+	return this -> price * this -> quantity;
+}
