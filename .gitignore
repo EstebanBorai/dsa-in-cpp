@@ -1,5 +1,12 @@
-# compiled files
-
-*.out
+*
 *.o
-*.dSYM
+*.out
+main
+
+# # written reverse
+# !*/src/**.c
+# !*/src/**.cpp
+# !*/src/**.h
+# !*/src/**.hpp
+# !*/src/**Makefile
+# !*/src/**.sh
