@@ -29,18 +29,21 @@ void Scores::add(const GameEntry& e) {
 }
 
 GameEntry Scores::remove(int i) {
+  int const TOTAL_ENTRIES = this -> num_entries;
+  GameEntry const TARGET = this -> entries[i];
+
+  // Check `i` is not out of range
   if ((i < 0) || (i > this -> num_entries)) {
     throw EmptySlotException(i);
   }
 
-  GameEntry e = this -> entries[i];
-
-  for (int j = i + 1; j < this -> num_entries; j++) {
-    this -> entries[j - 1] = this -> entries[j];
+  for (int j = i; j < TOTAL_ENTRIES; j++) {
+    this -> entries[j] = this -> entries[j + 1];
   }
 
   this -> num_entries--;
-  return e;
+
+  return TARGET;
 }
 
 void Scores::println() {
