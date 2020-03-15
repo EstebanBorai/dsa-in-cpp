@@ -4,8 +4,8 @@
 
 int main() {
   Scores* scores = new Scores();
-  GameEntry* a = new GameEntry("Alice", 1502);
-  GameEntry* b = new GameEntry("Bob", 1200);
+  GameEntry* a = new GameEntry("Alice", 1202);
+  GameEntry* b = new GameEntry("Bob", 1501);
   GameEntry* c = new GameEntry("Carla", 900);
 
   scores -> add(*a);
@@ -14,7 +14,7 @@ int main() {
 
   scores -> println();
 
-  scores -> remove(0);
+  scores -> remove(1);
 
   std::cout << "After removal" << std::endl;
 

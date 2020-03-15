@@ -17,6 +17,7 @@
 	- [Polymorphism](https://github.com/estebanborai/dsa-cpp/tree/master/src/polymorphism)
 	- [Function Template](https://github.com/estebanborai/dsa-cpp/tree/master/src/fn_template)
 	- [Function Class](https://github.com/estebanborai/dsa-cpp/tree/master/src/class_template)
+	- [Storing into an Array](https://github.com/estebanborai/dsa-cpp/tree/master/src/storing_into_array)
 
-- Implementations
-	- [Shopping Cart](https://github.com/estebanborai/dsa-cpp/tree/master/src/shopping_cart)
+- Algorithms
+	- [Insertion Sort](https://github.com/estebanborai/dsa-cpp/tree/master/src/insertion_sort)
